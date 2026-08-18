@@ -1,5 +1,3 @@
-# breast-cancer-classification-app
-breast-cancer-classification-app
 # Breast Cancer Diagnostic Classification Web App
 
 This repository contains an end-to-end Machine Learning project developed as part of the M.Tech (AIML/DSE) Machine Learning Assignment 2. The objective is to build, evaluate, and deploy five distinct machine learning models to classify breast tumors as either Malignant or Benign.
