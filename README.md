@@ -20,12 +20,11 @@ https://github.com/2025ac05612/breast-cancer-classification-app.git
 We evaluated 5 classic machine learning models on a stratified 20% test partition (114 samples). The features were standard-scaled before training and evaluation.
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |<br>
-| **Logistic Regression** | 0.9825 | 0.9954 | 0.9861 | 0.9861 | 0.9861 | 0.9623 |
-| **Decision Tree** | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 | 0.8174 |
-| **kNN** | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
-| **Naive Bayes** | 0.9298 | 0.9868 | 0.9444 | 0.9444 | 0.9444 | 0.8492 |
+| **Logistic Regression** | 0.9825 | 0.9954 | 0.9861 | 0.9861 | 0.9861 | 0.9623 |<br>
+| **Decision Tree** | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 | 0.8174 |<br>
+| **kNN** | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |<br>
+| **Naive Bayes** | 0.9298 | 0.9868 | 0.9444 | 0.9444 | 0.9444 | 0.8492 |<br>
 | **Random Forest (Ensemble)** | 0.9561 | 0.9939 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
-
 ## e. Observations on Model Performance
 - **Logistic Regression:** Achieved the highest performance across all evaluation criteria, including an Accuracy of 98.25% and an outstanding MCC of 0.9623. Since breast cancer datasets are often highly linearly separable after scaling, the linear decision boundary of Logistic Regression proved highly effective and stable without overfitting.
 - **Decision Tree:** Displayed the lowest accuracy (91.23%) and MCC (0.8174). Individual decision trees are prone to high variance and overfitting on continuous datasets with small sample sizes.
