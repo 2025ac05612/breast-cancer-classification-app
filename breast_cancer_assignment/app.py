@@ -12,19 +12,22 @@ from sklearn.metrics import (
 )
 
 # Set page layout and title
-st.set_page_config(page_title="M.Tech ML Assignment 2", layout="wide")
+st.set_page_config(page_title="2025ac05612 - Assignment 2", layout="wide")
 st.title("Breast Cancer Classification Model Evaluator")
 st.write("Upload test data and select a model to view performance metrics and evaluation plots.")
 
-# Define paths to saved models
+# Get the absolute directory path of the current app.py file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define paths to saved models dynamically
 model_files = {
-    'Logistic Regression': 'model/logistic_regression.pkl',
-    'Decision Tree': 'model/decision_tree.pkl',
-    'kNN': 'model/knn.pkl',
-    'Naive Bayes': 'model/naive_bayes.pkl',
-    'Random Forest (Ensemble)': 'model/random_forest_ensemble.pkl'
+    'Logistic Regression': os.path.join(BASE_DIR, 'model', 'logistic_regression.pkl'),
+    'Decision Tree': os.path.join(BASE_DIR, 'model', 'decision_tree.pkl'),
+    'kNN': os.path.join(BASE_DIR, 'model', 'knn.pkl'),
+    'Naive Bayes': os.path.join(BASE_DIR, 'model', 'naive_bayes.pkl'),
+    'Random Forest (Ensemble)': os.path.join(BASE_DIR, 'model', 'random_forest_ensemble.pkl')
 }
-scaler_file = 'model/scaler.pkl'
+scaler_file = os.path.join(BASE_DIR, 'model', 'scaler.pkl')
 
 # Step a: Dataset upload option (CSV)
 st.sidebar.header("1. Upload Data")
