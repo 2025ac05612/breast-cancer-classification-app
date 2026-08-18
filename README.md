@@ -19,7 +19,7 @@ https://github.com/2025ac05612/breast-cancer-classification-app.git
 ## d. Models Used & Comparison Table
 We evaluated 5 classic machine learning models on a stratified 20% test partition (114 samples). The features were standard-scaled before training and evaluation.
 
-| ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
+| ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |<br>
 | **Logistic Regression** | 0.9825 | 0.9954 | 0.9861 | 0.9861 | 0.9861 | 0.9623 |
 | **Decision Tree** | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 | 0.8174 |
 | **kNN** | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
