@@ -14,13 +14,12 @@ Breast cancer is one of the most common cancers among women worldwide. Early det
 - **Dataset Size:** 569 instances (455 training instances, 114 test instances).
 
 ## c. GitHub Repository Link
-[INSERT YOUR GITHUB REPOSITORY LINK HERE AFTER UPLOADING]
+https://github.com/2025ac05612/breast-cancer-classification-app.git
 
 ## d. Models Used & Comparison Table
 We evaluated 5 classic machine learning models on a stratified 20% test partition (114 samples). The features were standard-scaled before training and evaluation.
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Logistic Regression** | 0.9825 | 0.9954 | 0.9861 | 0.9861 | 0.9861 | 0.9623 |
 | **Decision Tree** | 0.9123 | 0.9157 | 0.9559 | 0.9028 | 0.9286 | 0.8174 |
 | **kNN** | 0.9561 | 0.9788 | 0.9589 | 0.9722 | 0.9655 | 0.9054 |
@@ -34,5 +33,5 @@ We evaluated 5 classic machine learning models on a stratified 20% test partitio
 - **Naive Bayes (Gaussian):** Provided respectable results (92.98% accuracy) under the assumption that continuous features follow normal distributions, but struggled slightly relative to discriminative models like Logistic Regression.
 - **Random Forest (Ensemble):** Tied with kNN for second-best accuracy (95.61%) and generated a high AUC score (0.9939). The ensemble of multiple randomized decision trees significantly reduced variance and corrected the overfitting observed in the single Decision Tree.
 
-### **Overall Winner**
-**Logistic Regression** is the overall winner. It achieved the highest scores on all major metrics, showing superior generalization capabilities on the unseen test set while maintaining high precision and recall (reducing false negatives, which is critical in healthcare settings).
+### **Final Implication**
+Logistic Regression is the overall winner. It achieved the highest scores on all major metrics, showing superior generalization capabilities on the unseen test set while maintaining high precision and recall (reducing false negatives, which is critical in healthcare settings).
